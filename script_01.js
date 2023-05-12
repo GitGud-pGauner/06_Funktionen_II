@@ -13,9 +13,9 @@
 
 // module: addition a + b |  test:
 
-output(add(2,2));
-output(add(2,-2));
-output(add(2,0));
+// output(add(2,2));
+// output(add(2,-2));
+// output(add(2,0));
 
 function add(a , b) {
 let c = a + b;	
@@ -24,20 +24,20 @@ return a + b;
 
 // module: substract a - b |  test:
 
-output(substract(2,2));
-output(substract(4,-2));
-output(substract(2,0));
+// output(subtract(2,2));
+// output(subtract(4,-2));
+// output(subtract(2,0));
 
-function substract(a , b) {
+function subtract(a , b) {
 let c = a - b;	
 return a - b;
 }
 
 // module: multiply a * b |  test:
 
-output(multiply(2,2));
-output(multiply(2,-2));
-output(multiply(2,0));
+// output(multiply(2,2));
+// output(multiply(2,-2));
+// output(multiply(2,0));
 
 function multiply(a , b) {
 let c = a * b;
@@ -51,12 +51,13 @@ output(divide(2,-2));
 output(divide(2,0));
 
 function divide(a , b) {
-let c = a / b;
-return a / b;	
+
+	if (b !=0) {
+		return a/b;
+	} else {
+		return "Teilen durch 0 nicht möglich";
+	}
 }
-
-
-
 
 
 
