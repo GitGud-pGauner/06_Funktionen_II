@@ -6,26 +6,46 @@
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
 1. Dateneingabe + -überprüfung : 
-2. Auswahl Rechenart : 
+2. Auswahl Rechenart : erledigt!
 3. Fkt. Grundrechenarten : erledigt!
 4. Ausgabe in Konsole : erledigt!
 */
-
-
 
 // Konstanten
 const ERROR_STR_DIV = "Division durch 0 nicht möglich!";
 const ERROR_STR_GEN = "Irgendetwas ging schief!"
 
-// module: calculator | tests:
+// 1. Dateneingabe + -überprüfung:
+
+// let input = prompt("Gib eine Zahl ein:");
+
+
+
+startApp()
+function startApp() {
+	output(calculator(getNum(),getNum(),getOp()));
+
+}
+
+function getNum(params) {
+	return parseInt(prompt("Zahl?"));
+}
+
+
+function getOp() {
+	return prompt("Operator?");
+}
+
+
+// 2. module: calculator | tests:
 // agreement : "+","-","*",":","/"
-output(calculator(3,2,"+"));
-output(calculator(3,2,"-"));
-output(calculator(3,2,"*"));
-output(calculator(3,2,":"));
-output(calculator(3,2,"/"));
-output(calculator(3,0,"/"));
-output(calculator(3,0,"#"));
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,0,"#"));
 
 function calculator(a,b,op) {
 
